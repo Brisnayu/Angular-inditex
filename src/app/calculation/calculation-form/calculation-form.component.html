@@ -1,0 +1,24 @@
+<form [formGroup]="calculationForm" (submit)="onSubmit()" novalidate>
+    <div>
+      <label for="fileCSV">Input 1:</label>
+      <input id="fileCSV" formControlName="fileCSV" type="file">
+      <div *ngIf="isFileCSVInvalidAndTouched()">
+        Input 1 is required.
+      </div>
+    </div>
+    
+    <div>
+      <label for="investmentAmount">Input 2:</label>
+      <input id="investmentAmount" formControlName="investmentAmount" type="number">
+      <div *ngIf="isFileCSVInvalidAndTouched()">
+        Input 1 is required.
+      </div>
+    </div>
+    
+    <div>
+      <label for="percentageBroker">Result:</label>
+      <input id="percentageBroker" formControlName="percentageBroker" type="number" readonly>
+    </div>
+  
+    <button type="submit" [disabled]="calculationForm.invalid">Calculate</button>
+  </form>
