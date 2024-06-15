@@ -17,9 +17,9 @@ export class CalculationFormComponent {
     })
   }
 
-  public isFileCSVInvalidAndTouched(): boolean {
-    const fileCSVControl = this.calculationForm.get('fileCSV');
-    return fileCSVControl ? fileCSVControl.invalid && fileCSVControl.touched : false;
+  public isControlInvalidAndTouched(controlName: string): boolean {
+    const control = this.calculationForm.get(controlName);
+    return control ? control.invalid && control.touched : false;
   }
 
   public onSubmit() {
