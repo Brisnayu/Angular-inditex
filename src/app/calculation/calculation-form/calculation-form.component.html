@@ -1,27 +1,28 @@
 <form [formGroup]="calculationForm" (submit)="onSubmit()" novalidate>
+    <h2>{{ 'titleForm' | translate }}</h2>
     <div>
-        <label for="fileCSV">Ingresa el archivo en formato CSV:</label>
+        <label for="fileCSV">{{ 'labelCSV' | translate }}: </label>
         <input id="fileCSV" formControlName="fileCSV" type="file">
         <div *ngIf="isControlInvalidAndTouched('fileCSV')">
-            Input 1 is required.
+            {{ 'textError' | translate }}
         </div>
     </div>
 
     <div>
-        <label for="investmentAmount">Importe de la inversión:</label>
+        <label for="investmentAmount">{{ 'labelInvestment' | translate }}: </label>
         <input id="investmentAmount" formControlName="investmentAmount" type="number">
         <div *ngIf="isControlInvalidAndTouched('investmentAmount')">
-            Input 1 is required.
+            {{ 'textError' | translate }}
         </div>
     </div>
 
     <div>
-        <label for="percentageBroker">Porcentaje de reducción:</label>
+        <label for="percentageBroker">{{ 'labelPercentage' | translate }}: </label>
         <input id="percentageBroker" formControlName="percentageBroker" type="number">
         <div *ngIf="isControlInvalidAndTouched('percentageBroker')">
-            Input 1 is required.
+            {{ 'textError' | translate }}
         </div>
     </div>
 
-    <button type="submit" [disabled]="calculationForm.invalid">Calculate</button>
+    <button type="submit" [disabled]="calculationForm.invalid">{{ 'sendButton' | translate }}</button>
 </form>

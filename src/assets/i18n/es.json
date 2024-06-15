@@ -1,0 +1,14 @@
+{
+    "title": "INDITEX - es",
+    "titleForm": "Introduce la información solicitada",
+    "labelCSV": "Archivo en formato CSV",
+    "labelInvestment": "Importe de la inversión",
+    "labelPercentage": "Porcentaje de reducción",
+    "textError": "Valor requerido",
+    "sendButton": "Calcular",
+    "titleResults": "Resultados",
+    "resultInvested": "El total invertido es de",
+    "resultActions": "El total de acciones obtenidas es de",
+    "resultRetention": "El total retenido es de",
+    "resetButton": "Reiniciar"
+}

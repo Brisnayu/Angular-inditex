@@ -1,0 +1,14 @@
+{
+    "title": "INDITEX - en",
+    "titleForm": "Enter the requested information",
+    "labelCSV": "CSV file",
+    "labelInvestment": "Investment amount",
+    "labelPercentage": "Reduction percentage",
+    "textError": "Value required",
+    "sendButton": "Calculate",
+    "titleResults": "Results",
+    "resultInvested": "Total amount invested is",
+    "resultActions": "Total actions obtained are",
+    "resultRetention": "Total retained is",
+    "resetButton": "Reset"
+}

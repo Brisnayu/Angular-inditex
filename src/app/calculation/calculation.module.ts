@@ -6,6 +6,7 @@ import { CalculationFormComponent } from './calculation-form/calculation-form.co
 import { CalculationResultComponent } from './calculation-result/calculation-result.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 const calculationRoutes: Routes = [
   { path: 'calcular', component: CalculationFormComponent }
@@ -21,7 +22,8 @@ const calculationRoutes: Routes = [
     CalculationRoutingModule,
     ReactiveFormsModule,
     RouterModule,
-    RouterModule.forChild(calculationRoutes)
+    RouterModule.forChild(calculationRoutes),
+    TranslateModule
   ],
   exports: [
     CalculationFormComponent

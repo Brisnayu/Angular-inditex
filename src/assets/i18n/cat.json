@@ -1,0 +1,14 @@
+{
+    "title": "INDITEX - Cat",
+    "titleForm": "Introdueix la informació sol·licitada",
+    "labelCSV": "Fitxer en format CSV",
+    "labelInvestment": "Import de la inversió",
+    "labelPercentage": "Percentatge de reducció",
+    "textError": "Valor requerit",
+    "sendButton": "Calcular",
+    "titleResults": "Resultats",
+    "resultInvested": "El total invertit és de",
+    "resultActions": "El total d'accions obtingudes és de",
+    "resultRetention": "El total retingut és de",
+    "resetButton": "Reiniciar"
+}
