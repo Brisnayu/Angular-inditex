@@ -1,7 +1,27 @@
-<div>
-    <h2>{{ 'titleResults' | translate }}</h2>
+<div class="container-text-result">
+    <h2>{{ 'titleResults' | translate }}: </h2>
 
     <p>{{ 'resultActions' | translate }}: {{ resultsForm.resultActions }}</p>
     <p>{{ 'resultInvested' | translate }}: {{ resultsForm.resultTotalInvested }} €</p>
     <p>{{ 'resultRetention' | translate }}: {{ resultsForm.resultRetention }} €</p>
+
+    <button (click)="reset()" class="submit">{{ 'resetButton' | translate }}</button>
+</div>
+
+<div class="container-table">
+    <h3>{{ 'titleTable' | translate }}: </h3>
+    <table>
+        <thead>
+          <tr>
+            <th>{{ 'Year' | translate }}</th>
+            <th>{{ 'Action' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let year of resultsForm.resultYears">
+            <td>{{ year["Año"] }}</td>
+            <td>{{ year.Acciones }}</td>
+          </tr>
+        </tbody>
+      </table>
 </div>

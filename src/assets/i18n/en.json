@@ -10,5 +10,8 @@
     "resultInvested": "Total amount invested is",
     "resultActions": "Total actions obtained are",
     "resultRetention": "Total retained is",
+    "titleTable": "Table with actions by year",
+    "Year": "Year",
+    "Action": "Actions",
     "resetButton": "Reset"
 }

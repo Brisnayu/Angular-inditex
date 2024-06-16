@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+th {
+    background-color: #004D59;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: #004d5972;
+}
+
+.container-text-result {
+    width: 25rem;
+}
+
+.container-table {
+    width: 80vw;
+}
