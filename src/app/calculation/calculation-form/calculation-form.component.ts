@@ -1,17 +1,21 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-
+import { Component, Output, EventEmitter } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { InfoForm } from '../../models/infoForm';
+import { CalcFormService } from '../../services/calc-form.service';
 @Component({
   selector: 'app-calculation-form',
   templateUrl: './calculation-form.component.html',
   styleUrl: './calculation-form.component.scss'
 })
 export class CalculationFormComponent {
+  @Output() validResult = new EventEmitter<boolean>();
+  newArray = [];
+
   public calculationForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private resultsInditex: CalcFormService) {
     this.calculationForm = this.fb.group({
-      fileCSV: ['', Validators.required],
+      // fileCSV: [''],
       investmentAmount: ['', Validators.required],
       percentageBroker: ['', Validators.required]
     })
@@ -23,7 +27,9 @@ export class CalculationFormComponent {
   }
 
   public onSubmit() {
-    console.log('Esta funcionando')
+    const formData = this.calculationForm.value as InfoForm;
+    
+    this.validResult.emit(true);
+    this.resultsInditex.resultsInditex(formData);
   }
-
 }
