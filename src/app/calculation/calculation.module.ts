@@ -26,7 +26,8 @@ const calculationRoutes: Routes = [
     TranslateModule
   ],
   exports: [
-    CalculationFormComponent
+    CalculationFormComponent,
+    CalculationResultComponent
   ]
 })
 export class CalculationModule { }

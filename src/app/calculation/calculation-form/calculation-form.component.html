@@ -1,28 +1,32 @@
-<form [formGroup]="calculationForm" (submit)="onSubmit()" novalidate>
+<div class="container">
     <h2>{{ 'titleForm' | translate }}</h2>
-    <div>
-        <label for="fileCSV">{{ 'labelCSV' | translate }}: </label>
-        <input id="fileCSV" formControlName="fileCSV" type="file">
-        <div *ngIf="isControlInvalidAndTouched('fileCSV')">
-            {{ 'textError' | translate }}
-        </div>
-    </div>
 
-    <div>
-        <label for="investmentAmount">{{ 'labelInvestment' | translate }}: </label>
-        <input id="investmentAmount" formControlName="investmentAmount" type="number">
-        <div *ngIf="isControlInvalidAndTouched('investmentAmount')">
-            {{ 'textError' | translate }}
-        </div>
-    </div>
+    <form [formGroup]="calculationForm" (submit)="onSubmit()" novalidate>
 
-    <div>
-        <label for="percentageBroker">{{ 'labelPercentage' | translate }}: </label>
-        <input id="percentageBroker" formControlName="percentageBroker" type="number">
-        <div *ngIf="isControlInvalidAndTouched('percentageBroker')">
-            {{ 'textError' | translate }}
-        </div>
-    </div>
+        <!-- <div>
+            <label for="fileCSV">{{ 'labelCSV' | translate }}: </label>
+            <input id="fileCSV" formControlName="fileCSV" type="file" accept=".csv">
+            <div *ngIf="isControlInvalidAndTouched('fileCSV')">
+                {{ 'textError' | translate }}
+            </div>
+        </div> -->
 
-    <button type="submit" [disabled]="calculationForm.invalid">{{ 'sendButton' | translate }}</button>
-</form>
+        <div>
+            <label for="investmentAmount">{{ 'labelInvestment' | translate }}: </label>
+            <input id="investmentAmount" formControlName="investmentAmount" type="number">
+            <div *ngIf="isControlInvalidAndTouched('investmentAmount')">
+                {{ 'textError' | translate }}
+            </div>
+        </div>
+
+        <div>
+            <label for="percentageBroker">{{ 'labelPercentage' | translate }}: </label>
+            <input id="percentageBroker" formControlName="percentageBroker" type="number">
+            <div *ngIf="isControlInvalidAndTouched('percentageBroker')">
+                {{ 'textError' | translate }}
+            </div>
+        </div>
+
+        <button type="submit" [disabled]="calculationForm.invalid">{{ 'sendButton' | translate }}</button>
+    </form>
+</div>
