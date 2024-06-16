@@ -10,5 +10,8 @@
     "resultInvested": "El total invertido es de",
     "resultActions": "El total de acciones obtenidas es de",
     "resultRetention": "El total retenido es de",
+    "titleTable": "Tabla con las acciones por año",
+    "Year": "Año",
+    "Action": "Acciones",
     "resetButton": "Reiniciar"
 }

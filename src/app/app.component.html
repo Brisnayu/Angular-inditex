@@ -9,9 +9,10 @@
     [ngClass]="{ 'selected': selectedLanguage === 'cat' }" />
 </div>
 
+<div class="container-data">
+  <app-calculation-form (validResult)="changeShowResults($event)"></app-calculation-form>
 
-<app-calculation-form (validResult)="changeShowResults($event)"></app-calculation-form>
-
-<ng-container *ngIf="showResults">
-  <app-calculation-result></app-calculation-result>
-</ng-container>
+  <ng-container *ngIf="showResults">
+    <app-calculation-result class="container-results"></app-calculation-result>
+  </ng-container>
+</div>

@@ -10,5 +10,8 @@
     "resultInvested": "El total invertit és de",
     "resultActions": "El total d'accions obtingudes és de",
     "resultRetention": "El total retingut és de",
+    "titleTable": "Tabla amb les accions per any",
+    "Year": "Any",
+    "Action": "Accions",
     "resetButton": "Reiniciar"
 }

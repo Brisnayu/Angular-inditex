@@ -24,6 +24,11 @@ export class CalculationResultComponent implements OnInit {
 
   public showData() {
     this.resultsForm = this.resultsInditex.getResultsForm();
+    console.log(this.resultsForm)
+  }
+
+  public reset() {
+    location.reload();
   }
 
 }
